@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfwork Rubrica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Rubrica</h1>
+
+        <form id="formContatto">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Es. Mario">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" placeholder="Es. 3331234567">
+
+            <button type="submit" id="btnSalva">Aggiungi contatto</button>
+        </form>
+
+        <button type="button" id="btnMostra" aria-expanded="false" aria-controls="contenitoreTabella">Mostra contatti</button>
+
+        <div id="contenitoreTabella" class="nascosto">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Azioni</th>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabella"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
